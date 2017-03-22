@@ -1,5 +1,0 @@
-#Core 
-
-## ASDasdASD
-
-## ASDasdAS

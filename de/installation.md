@@ -1,3 +1,0 @@
-Installation von smaxt
-
-lkjASLDKLasdn
