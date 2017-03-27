@@ -1,9 +1,9 @@
 # Download and Installation
 
-1. Download the archive \*\*setup\_smaxt\_Database\_Extention\_V3.00\_en.zip\*\* from \[www.smaxt.com\]\([http://www.smaxt.com/\](http://www.smaxt.com/\)\) or detach the file from the email, if you´ve received the installation-files together with the license via email. Move the archive to an appropriate directory.
+1. Download the archive \*\*setup\_smaxt\_Database\_Extention\_V3.00\_en.zip\*\* from \[www.smaxt.com\]\([http://www.smaxt.com/\](http://www.smaxt.com/%29\) or detach the file from the email, if you´ve received the installation-files together with the license via email. Move the archive to an appropriate directory.
 2. Open a shell and unzip the archive like this:
 
-&gt;   unzip setup\\_smaxt\\_Database\\_Extention\\_V2.00\\_de.zip
+`>   unzip setup\_smaxt\_Database\_Extention\_V2.00\_de.zip`
 
 \| \*\*Important\*\*                                                                                                                                                                                                                                                                                                                                                                                                     \|
 
@@ -105,11 +105,11 @@ smaxt-user here, that is entitled to perform imports.
 
    The default-behaviour of this script is:
 
-1. The database is bound to the \*\*Local-Loopback-Adapter 127.0.0.1\*\*, then
+2. The database is bound to the \*\*Local-Loopback-Adapter 127.0.0.1\*\*, then
 
    communication can be done with any IP-address \(\*\*\_\_\*\).
 
-1. Otherwise, the first section of the IP-address of the Databaseserver will be
+3. Otherwise, the first section of the IP-address of the Databaseserver will be
 
    kept and the remaining sections will be set to \_ \(f.e. \_\*10.0.1.12\*\* will
 
@@ -153,7 +153,7 @@ desired IP-information to the variable \*\*v\\_host\*\* in lines 27 and 31.
 
 1. Now perform the actual installation with the help of the script
 
-   \*\*\_\\_make\\_db.cmd\*\* \(for Windows\) or \*\*\_\\_make\\_db.sh\*\* \(for Unix\).
+   \*\*\_\_make\\_db.cmd\*\* \(for Windows\) or \*\*\_\\_make\\_db.sh\*\* \(for Unix\).
 
    Syntax of a \\_\\_make\\_db – call is like:
 
