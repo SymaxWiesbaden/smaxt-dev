@@ -6,3 +6,5 @@ In theory, this is the only component that really needs to be installed. Basical
 
 Indeed, only the installation of the smaxt core would be needed on the  production system in an environment that consists of a development database, a test and/or integration database, as well as a production system. The configuration and the layout could be anticipated on the development environment and finally imported into the production.
 
+
+
