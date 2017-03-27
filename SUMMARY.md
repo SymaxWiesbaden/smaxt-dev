@@ -1,23 +1,32 @@
 # Summary
 
 * [Introduction](README.md)
+* [Installation](installation/installation.md)
+  * [smaxt core](installation/core.md)
+    * [Installation requirements](installation/sysreq-core.md)
+    * [Download and Installation](installation/dld-core.md)
+    * [Activate license](installation/activate.md)
+  * [smaxt Management Studio](installation/studio.md)
+    * [System Requirements](sysreq-stud.md)
+    * [download and installation](dld-stud.md)
+    * [Activate license](activate.md)
+  * [smaxt Excel Add-In](installation/addin-xlsx.md)
+    * [System Requirements](installation/sysreq-xlsx.md)
+    * [Download and Installation](installation/dld-xlsx.md)
+  * [smaxt PowerPoint Add-In](installation/addin-pptx.md)
+    * [System Requirements](installation/sysreq-pptx.md)
+    * [Download and Installation](installation/dld-pptx.md)
+  * [smaxt Word Add-In](installation/addin-docx.md)
+    * [System Requirements](installation/sysreq-docx.md)
+    * [Download and Installation](installation/dld-docx.md)
+* [Getting started](getstarted/getstarted.md)
+  * [Create A new smaxt Document](getstarted/new-smaxt-doc.md)
+  * [First Impression of smaxt Management Studio](1-imp-studio.md)
+* [Understanding smaxt ](understanding/understanding.md)
+* [Additional Functions](additonal/add-funcs.md)
+* [smaxt MS Office Add Ins](/officeaddins/officeaddins.md)
+* [Appendix](appendix/appendix.md)
+* [Glossary](glossary/glossary.md)
 
-## Part 1
 
-* [First Article](first-article.md)
-* [Second Article](second-article.md)
-
-### Part 1.1
-
-* [First Article](1-first-article.md)
-* [Second Article](1-second-article.md)
-
-### Part 1.2
-
-* [First Article](2-first-article.md)
-* [Second Article](2-second-article.md)
-
-## Part 2
-
-* [Another Article](another-article.md)
 
