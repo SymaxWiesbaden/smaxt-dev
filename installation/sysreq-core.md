@@ -1,9 +1,6 @@
 # Installation Requirements
 
-smaxt can be installed on ORACLE™-databases of version 11gR2\[^2\] and newer. It is independent on the ORACLE™ Editions, so it works on Standard-Server, Enterprise-Server  
- as well as on the XE-Edition.
-
-There are no special requirements for the present database instance to run smaxt.
+smaxt can be installed on ORACLE™-databases of version 11gR2\[^2\] and newer. It is independent on the ORACLE™ Editions, so it works on Standard-Server, Enterprise-Server as well as on the XE-Edition. There are no special requirements for the present database instance to run smaxt.
 
 Only for the usage of the smaxt features for the job-driven production of documents, as well as their transport via FTP or SMTP, the ORACLE Scheduler  \(DBA\\_SCHEDULER\) and the network-access-control list \(DBMS\\_NETWORK\\_ACL\\_ADMIN\)\[^3\] must be activated.
 
