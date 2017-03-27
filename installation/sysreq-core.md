@@ -2,7 +2,7 @@
 
 smaxt can be installed on ORACLE™-databases of version 11gR2[^1] and newer. It is independent on the ORACLE™ Editions, so it works on Standard-Server, Enterprise-Server as well as on the XE-Edition. There are no special requirements for the present database instance to run smaxt.
 
-Only for the usage of the smaxt features for the job-driven production of documents, as well as their transport via _FTP_ or _SMTP_, the ORACLE Scheduler  \(_DBA\\_SCHEDULER_\) and the network-access-control list \(_DBMS\\_NETWORK\\_ACL\\_ADMIN_\)[^2] must be activated.
+Only for the usage of the smaxt features for the job-driven production of documents, as well as their transport via _FTP_ or _SMTP_, the ORACLE Scheduler  \(_DBA\_SCHEDULER_\) and the network-access-control list \(_DBMS\_NETWORK\_ACL\_ADMIN_\)[^2] must be activated.
 
 The installation of smaxt is done with the help of a script using SQLPLUS and SQLLDR. Therefore, it can be performed from any client machine as well as directly on the Database-Server itself.
 
