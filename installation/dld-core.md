@@ -62,7 +62,7 @@ The password for the _SYS-User_ must be set only for the reason, as in the first
 
 For the technical smaxt users, you can choose the passwords as you like. These are necessary, when you register a connection in smaxt Management Studio, or the smaxt Office add-ins or work with an application, that uses the smaxt API.
 
-The user **IMPORT\_USER** is initially set to \*_, _which is retained for an initial installation. But if you´re later on installing an smaxt update with the option_ install\_core_ \(see below\) and already have activated the rights and role-system, instead of \*, you have to provide the logical smaxt-user here, that is entitled to perform imports.
+The user **IMPORT\_USER** is initially set to \*, which is retained for an initial installation. But if you´re later on installing an smaxt update with the option install\_core \(see below\) and already have activated the rights and role-system, instead of \*, you have to provide the logical smaxt-user here, that is entitled to perform imports.
 
 #### 5. Check ACL Settings
 
