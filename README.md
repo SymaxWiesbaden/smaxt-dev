@@ -8,8 +8,6 @@ This is usually done by performing the relevant reports and then manually using 
 
 smaxt, however, is a directly in the ORACLE™ database integrated solution, that produces the desired Office™ documents perfect, immediately and without any intermediate steps.
 
-
-
 This leads to a number of advantages:
 
 * Since smaxt is located in the ORACLE database, there´s no need to transfer the data to another system \(ad hoc or nightly ETL jobs\), as it is usually necessary for other reporting and business intelligence tools. This means network resources are conserved and evaluations can take place with utmost efficiency, timeliness and speed.
@@ -34,20 +32,17 @@ This documentation introduces you in all features of smaxt, where the constructi
 
 This is followed by a description of all features of smaxt as well as the features of the smaxt Office add-ins and the meaning of the individual forms of the management interface.
 
- In the Appendix then individual aspects of smaxt are listed in detail, so that it can be used as a reference book.
+In the Appendix then individual aspects of smaxt are listed in detail, so that it can be used as a reference book.
+
+**Important note:**
 
 ```
-Important note:
-
 Oracle is a registered trademark of Oracle and/or its affiliates. 
 Excel, Office, PowerPoint, Word, Windows and Microsoft are registered trademarks 
 or trademarks of Microsoft Corporation in the United States and/or other countries.
 ```
 
-**Important note:**
-
-Oracle is a registered trademark of Oracle and/or its affiliates. Excel, Office, PowerPoint, Word, Windows and Microsoft are registered trademarks or trademarks of Microsoft Corporation in the United States and/or other countries.  
-
+---
 
 [\[1\]](#_ftnref1) DBO = data-based Office
 
