@@ -1,7 +1,12 @@
 # Download and Installation
 
-1. Download the archive \*\*setup\_smaxt\_Database\_Extention\_V3.00\_en.zip\*\* from \[www.smaxt.com\]\([http://www.smaxt.com/\](http://www.smaxt.com/%29\) or detach the file from the email, if you´ve received the installation-files together with the license via email. Move the archive to an appropriate directory.
-2. Open a shell and unzip the archive like this:
+#### 1. Download the archive
+
+Download the archive \*\*setup\_smaxt\_Database\_Extention\_V3.00\_en.zip\*\* from \[www.smaxt.com\]\([http://www.smaxt.com/\](http://www.smaxt.com/%29\) or detach the file from the email, if you´ve received the installation-files together with the license via email. Move the archive to an appropriate directory.
+
+#### 2. Unzip the archive
+
+Open a shell and unzip the archive like this:
 
 `>   unzip setup\_smaxt\_Database\_Extention\_V2.00\_de.zip`
 
@@ -9,59 +14,63 @@
 
 > Make sure, that the directory, you choose fort he unzip-action, does not contain any space-characters, otherwise you´ll receive error during the installation!
 
-**Important: **   
+**Important: **
 
 > If you perform the installation on an Unix-System, verify that the correct case of filenames is preserved. Some fileservers modify filenames durin copy-jobs in that way, that everything is changes to lowercase or only the first letter stays in upper, while the rest is converted to lower.
 >
 > If your fileserver behaves like this, you´ll get errors during installation and therefore a corrupt smaxt-system.
 
+  
+After unpacking and copying to the appropriate directory, the subdirectory-structure should look like this:
 
-    After unpacking and copying to the appropriate directory, the subdirectory-structure should look like this:
+```
+> /smaxt
+> /smaxt_api
+> /smaxt_test
+> /sys
+```
 
-    ```
-    > /smaxt
-    > /smaxt_api
-    > /smaxt_test
-    > /sys
-    ```
+While all these directories contain several files, you should find the following ones in the main directory:
 
+```
+> __make_db.cmd
+> __make_db.sh
+> __pwd.dat
+> __readme.txt
+```
 
-    While all these directories contain several files, you should find the following ones in the main directory:
+#### 3. Installation under UNIX
 
-    ```
-    > __make_db.cmd
-    > __make_db.sh
-    > __pwd.dat
-    > __readme.txt
-    ```
+If you install under UNIX, you must ensure that the user who is running the installation has execute privileges to the files. This can be done with the command:
 
-3. If you install under UNIX, you must ensure that the user who is running the installation has execute privileges to the files. This can be done with the command:
+```
+ chmod -R 755 \\*
+```
 
-    ```
-    chmod -R 755 \\*
-    ```
+#### 4. Adjust passwords of the technical smaxt-users
 
-4. Start your favorite editor and open the file \*\*\\_\\_pwd.dat\*\* to adjust passwords of the technical smaxt-users. This file looks like:
+Start your favorite editor and open the file \*\*\_\_pwd.dat\*\* to adjust passwords of the technical smaxt-users. This file looks like:
 
-    ```
-    \*sys=sys\*  
-    \*smaxt=smaxt\*  
-    \*smaxt\\_test=smaxt\\_test\*  
-    \*smaxt\\_api=smaxt\\_api\*  
-    \*import\\_user=\\*\*  
-    ```
+```
+ \*sys=sys\*  
+ \*smaxt=smaxt\*  
+ \*smaxt\\_test=smaxt\\_test\*  
+ \*smaxt\\_api=smaxt\\_api\*  
+ \*import\\_user=\\*\*
+```
 
-The password for the SYS user must set only for the reason, as in the first step of the installion, the smaxt user SMAXT, SMAXT\\_API and SMAXT\\_TEST are created, and for this SYS privileges are required.  
+The password for the SYS user must be set only for the reason, as in the first step of the installion, the smaxt user _SMAXT_, _SMAXT\_API_ and _SMAXT\_TEST_ are created, and for this SYS privileges are required.
 
-For the technical smaxt users, you can choose the passwords as you like. These are necessary, when you register a connection in smaxt Management
-Studio, or the smaxt Office add-ins or work with an application, that uses the smaxt API.  
+For the technical smaxt users, you can choose the passwords as you like. These are necessary, when you register a connection in smaxt Management Studio, or the smaxt Office add-ins or work with an application, that uses the smaxt API.
 
-The user \*\*IMPORT\\_USER\*\* is initially set to \\*, which is retained for an initial installation. But if you´re later on installing an smaxt update with the option \*install\\_core\* \(see below\) and already have activated the rights and role-system, instead of \\*, you have to provide the logical smaxt-user here, that is entitled to perform imports.
+The user **IMPORT\_USER** is initially set to \*_, which is retained for an initial installation. But if you´re later on installing an smaxt update with the option install\_core_ \(see below\) and already have activated the rights and role-system, instead of \*, you have to provide the logical smaxt-user here, that is entitled to perform imports.
 
-5. Check the ACL settings by opening the file \*\*sys/acl.sql\*\* in your favorite editor. This script determines which IP addresses the technical smaxt user can communicate with, if produced documents should be distributed via FTP or SMTP. The default-behaviour of this script is:
+#### 5. Check ACL Settings
 
-    a) The database is bound to the \*\*Local-Loopback-Adapter 127.0.0.1\*\*, then communication can be done with any IP-address \(\*\*\_\_\*\).
-    b) Otherwise, the first section of the IP-address of the Databaseserver will be kept and the remaining sections will be set to \_ \(f.e. \_\*10.0.1.12\*\* will be set to \*\*10.\_\)\_\* so that communication with any IP in your local environment should be possible.
+Check the ACL settings by opening the file \*\*sys/acl.sql\*\* in your favorite editor. This script determines which IP addresses the technical smaxt user can communicate with, if produced documents should be distributed via FTP or SMTP. The default-behaviour of this script is:
+
+a\) The database is bound to the \*\*Local-Loopback-Adapter 127.0.0.1\*\*, then communication can be done with any IP-address \(\*\*\_\_\*\).  
+ b\) Otherwise, the first section of the IP-address of the Databaseserver will be kept and the remaining sections will be set to \_ \(f.e. \_\*10.0.1.12\*\* will be set to \*\*10.\_\)\_\* so that communication with any IP in your local environment should be possible.
 
 If you don´t agree with this, you can modifiy the script by assigning the desired IP-information to the variable \*\*v\\_host\*\* in lines 27 and 31.
 
