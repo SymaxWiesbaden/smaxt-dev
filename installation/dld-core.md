@@ -6,36 +6,26 @@
 `>   unzip setup\_smaxt\_Database\_Extention\_V2.00\_de.zip`
 
 > **Important: **                                                                                                                                                                                                                                                                                                                                                                                                    Make sure, that the directory, you choose fort he unzip-action, does not contain any space-characters, otherwise you´ll receive error during the installation!
-
-> **Important:**                                                                                                                                                                                                                                                                                                                                                                                                     
+>
+> **Important:**
 >
 > If you perform the installation on an Unix-System, verify that the correct case of filenames is preserved. Some fileservers modify filenames durin copy-jobs in that way, that everything is changes to lowercase or only the first letter stays in upper, while the rest is converted to lower.
 >
 > If your fileserver behaves like this, you´ll get errors during installation and therefore a corrupt smaxt-system.
 
-After unpacking and copying to the appropriate directory, the
+After unpacking and copying to the appropriate directory, the subdirectory-structure should look like this:
 
-subdirectory-structure should look like this:
+`>   */smaxt*  
+>   */smaxt\_api*  
+>   */smaxt\_test*  
+>   */sys*`
 
-&gt;   \*/smaxt\*
+While all these directories contain several files, you should find the following ones in the main directory:
 
-&gt;   \*/smaxt\\_api\*
-
-&gt;   \*/smaxt\\_test\*
-
-&gt;   \*/sys\*
-
-While all these directories contain several files, you should find the following
-
-ones in the main directory:
-
-&gt;   \*\\_\\_make\\_db.cmd\*
-
-&gt;   \*\\_\\_make\\_db.sh\*
-
-&gt;   \*\\_\\_pwd.dat\*
-
-&gt;   \*\\_\\_readme.txt\*
+`>   *\_\_make\_db.cmd*  
+>   *\_\_make\_db.sh*  
+>   *\_\_pwd.dat*  
+>   *\_\_readme.txt*`
 
 1. If you install under UNIX, you must ensure that the user who is running the
 
