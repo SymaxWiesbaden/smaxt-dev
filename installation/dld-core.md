@@ -5,17 +5,13 @@
 
 `>   unzip setup\_smaxt\_Database\_Extention\_V2.00\_de.zip`
 
-\| \*\*Important\*\*                                                                                                                                                                                                                                                                                                                                                                                                     \|
+> **Important: **                                                                                                                                                                                                                                                                                                                                                                                                    Make sure, that the directory, you choose fort he unzip-action, does not contain any space-characters, otherwise you´ll receive error during the installation!
 
-\|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------\|
-
-\| Make sure, that the directory, you choose fort he unzip-action, does not contain any space-characters, otherwise you´ll receive error during the installation!                                                                                                                                                                                                                                                    \|
-
-\| \*\*Important\*\*                                                                                                                                                                                                                                                                                                                                                                                                     \|
-
-\| If you perform the installation on an Unix-System, verify that the correct case of filenames is preserved. Some fileservers modify filenames durin copy-jobs in that way, that everything is changes to lowercase or only the first letter stays in upper, while the rest is converted to lower.                                                                                                                  \|
-
-\| If your fileserver behaves like this, you´ll get errors during installation and therefore a corrupt smaxt-system.                                                                                                                                                                                                                                                                                                 \|
+> **Important:**                                                                                                                                                                                                                                                                                                                                                                                                     
+>
+> If you perform the installation on an Unix-System, verify that the correct case of filenames is preserved. Some fileservers modify filenames durin copy-jobs in that way, that everything is changes to lowercase or only the first letter stays in upper, while the rest is converted to lower.
+>
+> If your fileserver behaves like this, you´ll get errors during installation and therefore a corrupt smaxt-system.
 
 After unpacking and copying to the appropriate directory, the
 
@@ -153,7 +149,7 @@ desired IP-information to the variable \*\*v\\_host\*\* in lines 27 and 31.
 
 1. Now perform the actual installation with the help of the script
 
-   \*\*\_\_make\\_db.cmd\*\* \(for Windows\) or \*\*\_\\_make\\_db.sh\*\* \(for Unix\).
+   \*\*\_\_make\_db.cmd\*\* \(for Windows\) or \*\*\_\\_make\\_db.sh\*\* \(for Unix\).
 
    Syntax of a \\_\\_make\\_db – call is like:
 
