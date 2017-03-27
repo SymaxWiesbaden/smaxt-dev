@@ -42,6 +42,8 @@ Excel, Office, PowerPoint, Word, Windows and Microsoft are registered trademarks
 or trademarks of Microsoft Corporation in the United States and/or other countries.
 ```
 
+
+
 ---
 
 [\[1\]](#_ftnref1) DBO = data-based Office
