@@ -15,6 +15,7 @@
 >
 > If your fileserver behaves like this, you´ll get errors during installation and therefore a corrupt smaxt-system.
 
+
     After unpacking and copying to the appropriate directory, the subdirectory-structure should look like this:
 
     ```
@@ -23,6 +24,7 @@
     > /smaxt_test
     > /sys
     ```
+
 
     While all these directories contain several files, you should find the following ones in the main directory:
 
