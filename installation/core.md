@@ -1,6 +1,6 @@
-# Core
+# Installing the smaxt Database Extension
 
-The actual core of smaxt, which is responsible for the evaluations, the parameter handling and rendering resulting Office documents and that also contains the mechanisms for rights compliance and monitoring, job scheduling and eployment in directories and shipment by E-Mail, is a pure PL/SQL application that is installed through a SQL script into an existing database.
+The smaxt Database Extension is the core of smaxt. It is responsible for the evaluations, the parameter handling and rendering resulting Office documents and that also contains the mechanisms for rights compliance and monitoring, job scheduling and eployment in directories and shipment by E-Mail, is a pure PL/SQL application that is installed through a SQL script into an existing database.
 
 In theory, this is the only component that really needs to be installed. Basically it´s possible to configure and run smaxt completely via SQL scripts, although this is very troublesome.
 

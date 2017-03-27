@@ -2,7 +2,7 @@
 
 * [Introduction](README.md)
 * [Installation](installation/installation.md)
-  * [smaxt core](installation/core.md)
+  * [smaxt Database Extension](installation/core.md)
     * [Installation requirements](installation/sysreq-core.md)
     * [Download and Installation](installation/dld-core.md)
     * [Activate license](installation/activate.md)
@@ -27,6 +27,4 @@
 * [smaxt MS Office Add Ins](/officeaddins/officeaddins.md)
 * [Appendix](appendix/appendix.md)
 * [Glossary](glossary/glossary.md)
-
-
 
