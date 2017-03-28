@@ -21,14 +21,9 @@ Open a shell and unpack the archive:
 After unpacking, you find the setup-routine in the directory.  
  Run it and follow instructions on the screen to install the smaxt Management Studio.
 
-**Note  
-: **
+**Note: **
 
-> The installer checks, if the required .NET-Frameworks is already present on the target computer.  
->  If not, a dialogue appears, which prompts you to decide to cancel installation or try to install the required .NET-Framework automatically.  
->  Keep in mind, that after .NET installation, a reboot of the computer is absolutely necessary, otherwise the smaxt-application will not work properly.
-
-
+> The installer checks, if the required .NET-Framework is already installed on the target computer. If not, a dialogue prompts you to decide to either cancel installation or try to install the required .NET-Framework automatically. Keep in mind, that after .NET installation, a reboot of the computer is absolutely necessary, otherwise the smaxt-application will not work properly.
 
 [^1]: Download of .NET-Frameworks 4.5: [http://www.microsoft.com/de-DE/download/details.aspx?id=42642](http://www.microsoft.com/de-DE/download/details.aspx?id=42642) \(Take care, that the complete .NET Framework "Full profile" will be installed, as for "Client Profile" does not fit for execution of smaxt\)
 
