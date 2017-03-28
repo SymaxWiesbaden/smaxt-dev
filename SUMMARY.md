@@ -10,6 +10,7 @@
   * [smaxt Excel Add-In](installation/addin-xlsx.md)
   * [smaxt PowerPoint Add-In](installation/addin-pptx.md)
   * [smaxt Word Add-In](installation/addin-docx.md)
+  * [Give permissions to smaxt](installation/give-permissions-to-smaxt.md)
 * [Getting started](getstarted/getstarted.md)
   * [Create A new smaxt Document](getstarted/new-smaxt-doc.md)
   * [First Impression of smaxt Management Studio](1-imp-studio.md)
