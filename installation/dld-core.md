@@ -1,4 +1,4 @@
-# Download and Installation
+### Download and Installation
 
 #### 1. Download the archive
 
