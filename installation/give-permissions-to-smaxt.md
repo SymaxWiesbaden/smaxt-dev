@@ -7,23 +7,17 @@ Smaxt only can create documents based on tables and views or table functions, if
 
 Use the following statement to create a script that creates the necessary GRANT rights for all tables and views for a specific owner \(= schema\). Run the script and type the desired owner name at the prompt:
 
-`SET DEFINE ON`
-
-`SET FEEDBACK OFF`
-
-`SET PAGESIZE 0`
-
-`spool _grants.sql`
-
-`SELECT 'grant select on ' || o.owner || '.' || o.object_name || ' to SMAXT;' grant_cmd`
-
-`FROM all_objects o`
-
-`WHERE o.OBJECT_TYPE IN ('TABLE', 'VIEW')`
-
-`AND o.OWNER = upper('&ownername')`
-
-`ORDER BY o.OBJECT_NAME;`
+```
+SET DEFINE ON
+SET FEEDBACK OFF
+SET PAGESIZE 0
+spool _grants.sql
+SELECT 'grant select on ' || o.owner || '.' || o.object_name || ' to SMAXT;' grant_cmd
+FROM all_objects o
+WHERE o.OBJECT_TYPE IN ('TABLE', 'VIEW')
+AND o.OWNER = upper('&ownername')
+ORDER BY o.OBJECT_NAME;
+```
 
 Finally, exit the output with the command:
 
