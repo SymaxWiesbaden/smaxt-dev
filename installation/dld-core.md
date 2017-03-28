@@ -62,102 +62,64 @@ The password for the _SYS-User_ must be set only for the reason, as in the first
 
 For the technical smaxt users, you can choose the passwords as you like. These are necessary, when you register a connection in smaxt Management Studio, or the smaxt Office add-ins or work with an application, that uses the smaxt API.
 
-The user **IMPORT\_USER** is initially set to \\*, which is retained for an initial installation. But if you´re later on installing an smaxt update with the option `install_core` \(see below\) and already have activated the rights and role-system, instead of \\*, you have to provide the logical smaxt-user here, that is entitled to perform imports.
+The user **IMPORT\_USER** is initially set to \_, which is retained for an initial installation. But if you´re later on installing an smaxt update with the option _`install_core`_ \(see below\) and already have activated the rights and role-system, instead of \_, you have to provide the logical smaxt-user here, that is entitled to perform imports.
 
 #### 5. Check ACL Settings
 
-Check the ACL settings by opening the file `sys/acl.sql` in your favorite editor. This script determines which IP addresses the technical smaxt user can communicate with, if produced documents should be distributed via FTP or SMTP. The default-behaviour of this script is:
+Check the ACL-Settings by opening the file `sys/acl.sql` in your favorite editor. This script determines which IP-Addresses the technical smaxt user can communicate with, if produced documents should be distributed via FTP or SMTP. The default-behaviour configured in this script is:
 
-a\) The database is bound to the \*\*Local-Loopback-Adapter 127.0.0.1\*\*, then communication can be done with any IP-address \(\*\*\_\_\*\).  
- b\) Otherwise, the first section of the IP-address of the Databaseserver will be kept and the remaining sections will be set to \_ \(f.e. \_\*10.0.1.12\*\* will be set to \*\*10.\_\)\_\* so that communication with any IP in your local environment should be possible.
+1. If the database is bound to the **Local-Loopback-Adapter 127.0.0.1**, then communication can be done with any IP-address \(\*\).
+2. In other cases, the first section of the IP-address of the Database-Server will be kept and the remaining sections will be set to \(\*\), so that communication with any IP in your local environment should be possible. For example **10.0.1.12** will be set to **10.\*** 
 
-If you don´t agree with this, you can modifiy the script by assigning the desired IP-information to the variable \*\*v\\_host\*\* in lines 27 and 31.
+   If you don´t agree with this, you can modifiy the script by assigning the desired IP-information to the variable `v\_host` in line 27 and 31.
 
-1. Verify and eventually modify the script \*\*sys/user.sql\*\*
+#### 6. Ceck the script sys/user.sql
 
-   When you invoke the following installation step with the option "full" or
+Nect you have to verify the script `sys/user.sql` and eventually to modify it. When you invoke the following installation step with the option "full" or"createusers", then the required smaxt-user are created automatically in the destination database.
 
-   "createusers", then the required smaxt-user are created automatically in the
+However, this will be done by assigning the default-tablespace settings, which typically is _USERS_ as "default tablespace" and _TEMP_ as "temporary tablespace" \(see also 7.6.1.2 und 7.6.1.3\).
 
-   destination database.
+If you want to assign other tablespaces, you have to modify the script by adding following lines to the _CREATE USER_ - command:
 
-   However, this will be done by assigning the default-tablespace settings,
 
-   which typically is USERS as "default tablespace" and TEMP as "temporary
 
-   tablespace"
+`>   …`
 
-   \(see also 7.6.1.2 und 7.6.1.3\).
+`>   DEFAULT TABLESPACE \<usrtblspc\>`
 
-   If you want to assign other tablespaces, you have to modify the script by
+`>   TEMPORARY TABLESPACE \<tmptblspc\>`
 
-   adding following lines tot he CREATE USER - command:
+`>   …`
 
-&gt;   …
+#### 7. Run installation script
 
-&gt;   DEFAULT TABLESPACE \&lt;usrtblspc\&gt;
+Now perform the installation with the help of the script **\_\_make\_db.cmd** \(for Windows\) or **\_\_make\_db.sh** \(for Unix\). The syntax of a **\_\_make\_db** – call is like:
 
-&gt;   TEMPORARY TABLESPACE \&lt;tmptblspc\&gt;
+`>   __make_db.cmd targetdb [full|{createusers{ installcore{ installdemo}}}]`
 
-&gt;   …
+or 
 
-1. Now perform the actual installation with the help of the script
+`>   ./__make\_db.sh targetdb [full|{createusers{ installcore{ installdemo}}}]`
 
-   \*\*\_\_make\_db.cmd\*\* \(for Windows\) or \*\*\_\\_make\\_db.sh\*\* \(for Unix\).
+For \*targetdb\* , the _TNSNAME_ of the target database is expected \(f.e.: mydb.world\). Alternatively, instead of a _TNSNAME_, you can also provide an _EZCONNECT_-sequence, which can be useful, if _TNSNAME_-resolution will not work against the target server. An _EZCONNECT_-sequence follows the pattern:
 
-   Syntax of a \\_\\_make\\_db – call is like:
+`>   ipaddress:port/servicename`
 
-&gt;   \\_\\_make\\_db.cmd targetdb \[full\\|{createusers{ installcore{ installdemo}}}\]
+For example: _10.0.1.12:1521/mydb.world_
 
-&gt;   or
+If you encounter problems both variants, as for example the target database is already defined through environment variable and therefore the SQLPLUS call does not accept any _&lt;connect\_identifier&gt;_, then you simply provide @ as targetdb.
 
-&gt;   ./\\_\\_make\\_db.sh targetdb \[full\\|{createusers{ installcore{ installdemo}}}\]
+The kind of the installation is controlled with the second parameter of _\_\_make\_db_. If _full_ is specified, the smaxt users are created, the smaxt kernel will be installed and the test- and demo-data will be installed in the schema _smaxt\_TEST_.
 
-&gt;   For \*targetdb\* , the \*TNSNAME\* of the target database is expected \(f.e.:
+`>   __make_db.[cmd\|sh] mydb.world full`
 
-&gt;   \*mydb.world\*\).
+Instead of _full_ you can a.so specifiy any combinition of the other installation-kind keywords, like f.e.:
 
-&gt;   Alternatively, instead of a \*TNSNAME, you can also provide an
+`>   __make_db.[cmd|sh] mydb.world createusers installcore`
 
-&gt;   EZCONNECT\*-sequence, which can be useful, if \*TNSNAME\*-resolution will not
+for only creating the smaxt-users and install the smaxt core system, or:
 
-&gt;   work against the target server. An \*EZCONNECT\*-Sequence followst he pattern:
+`>   __make_db.[cmd|sh] mydb.world installdemo`
 
-&gt;   ipaddress:port/servicename
-
-&gt;   f.e.: \*10.0.1.12:1521/mydb.world\*
-
-&gt;
-
-&gt;   If you encounter problems both variants, as for example the target database
-
-&gt;   is already defined through environment variable and therefore the SQLPLUS
-
-&gt;   call does not accept any \&lt;connect\\_identifier\&gt;, then you simply provide \@
-
-&gt;   as targetdb.
-
-&gt;   The kind of the installation is controlled with the second parameter of
-
-&gt;   \\_\\_make\\_db.
-
-&gt;   If \*full\* is specified, the smaxt users are created, the smaxt kernel will
-
-&gt;   be installed and the test- and demo-data as well \(in the schema
-
-&gt;   \*\*smaxt\\_TEST\*\*\).
-
-&gt;   \\_\\_make\\_db.\[cmd\\|sh\] mydb.world full
-
-&gt;   Instead of \*full\* you can a.so specifiy any combinition of the other
-
-&gt;   installation-kind keywords, like f.e.:
-
-&gt;   \\_\\_make\\_db.\[cmd\\|sh\] mydb.world createusers installcore
-
-&gt;   for only creating the smaxt-users and install the smaxt core system, or:
-
-&gt;   \\_\\_make\\_db.\[cmd\\|sh\] mydb.world installdemo
-
-&gt;   to install the test- and demo-data later on.
+to install the test- and demo-data later on.
 
