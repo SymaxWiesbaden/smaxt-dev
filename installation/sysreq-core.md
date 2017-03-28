@@ -1,4 +1,4 @@
-# Installation Requirements
+### Installation Requirements
 
 smaxt can be installed on ORACLE™-databases of version 11gR2[^1] and newer. It is independent on the ORACLE™ Editions, so it works on Standard-Server, Enterprise-Server as well as on the XE-Edition. There are no special requirements for the present database instance to run smaxt.
 

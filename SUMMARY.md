@@ -8,6 +8,7 @@
     * [Activate license](installation/activate.md)
   * [smaxt Management Studio](installation/studio.md)
     * [System Requirements](sysreq-stud.md)
+    * System Requirements \(new\)
     * [download and installation](dld-stud.md)
     * [Activate license](activate.md)
   * [smaxt Excel Add-In](installation/addin-xlsx.md)
