@@ -107,9 +107,9 @@ For example: _10.0.1.12:1521/mydb.world_
 
 If you encounter problems with both variants, as for example the target database is already defined through environment variable and therefore the SQLPLUS call does not accept any _&lt;connect\_identifier&gt;_, then you simply provide @ as targetdb.
 
-The kind of the installation is controlled with the second parameter of _\_\_make\_db_. If \_full_ is specified, the smaxt users are created, the smaxt kernel will be installed and the test- and demo-data will be installed in the schema _smaxt\_TEST_.
+The kind of the installation is controlled with the second parameter of **\_make\_db**_. If full_ is specified, the smaxt users are created, the smaxt kernel will be installed and the test- and demo-data will be installed in the schema _smaxt\_TEST_.
 
-`>   __make_db.[cmd\|sh] mydb.world full`
+`>   __make_db.[cmd|sh] mydb.world full`
 
 Instead of _full_ you can a.so specifiy any combinition of the other installation-kind keywords, like f.e.:
 
