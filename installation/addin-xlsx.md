@@ -25,8 +25,7 @@ Open a command line and unzip the archive with the command:
 
 #### 3. Install the Add-In
 
-Quit all currently running instances of Excel  
-. Start the setup-routine from the folder where you unzipped the archive and follow the on-screen instructions.
+First quit all currently running instances of Excel. Then run the setup-routine from the folder where you unzipped the archive and follow the on-screen instructions.
 
 **Note:**
 
@@ -38,7 +37,11 @@ Quit all currently running instances of Excel
 >   
 > It has been observed that the detection of the required VSTO packet is not always reliable. In such cases, the smaxt add-in will show the following error message "... the manifest may not be valid or the file could not be downloaded ..." In this case, you have to manually download and install the VSTO-package.
 
+
+
 After successful installation Excel starts with an additional ribbon entry labeled "smaxt". The smaxt-specific operations can now be carried out within Excel. For a first introduction to this add-in, see chapter "Getting Started".
+
+
 
 [^1]: Download VSTO for Office 2010 at [http://www.microsoft.com/de-DE/download/details.aspx?id=48217](/Download der VSTO für Office 2010: http://www.microsoft.com/de-DE/download/details.aspx?id=48217)
 
