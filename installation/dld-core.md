@@ -126,13 +126,17 @@ to install the test- and demo-data later on.
 > If you´re already running a previous version of smaxt, there is no need to install the smaxt users again, so you can simply use the parameter "installcore", or, if you like to to update the test- and demo-data as well, the combination "installcore installdemo".
 
 If you have specified the desired combination of **\_\_make\_db** parameters, press _Enter \_to start the installation.  
- All steps of the installation will be logged in the file \*\*\_\_make\_db.log\*\*. The installation typically takes less than five minutes, even when doing a full installation.
+ All steps of the installation will be logged in the file \*\*\_\_make\_db.log\*\*. The installation typically takes less than five minutes, even when doing a full installation.[^2]
 
-After the installation please open the **\_\_make\_db.log **file and check it for appearances of ORA-messages to identify possible errors that might have appeared during the installation.
+After the installation please open the **\_\_make\_db.log **file and check it for appearances of ORA-messages to identify possible errors that might have appeared during the installation[^1].
 
 **Note:**
 
-> Occasionally we have noticed problems during upload and processing of smaxt-internal reports and demo-projects \(SEP-files\). You can recognize those problems by the messages "ERROR: wrong storage format, file can not be processed!" or "Could not add LogMsg to non-active JobId". Until now, we have not found the reason for this, but it looks like, that on some systems, processing the SEP-files with SQLLDR leads to an illegal modification of the files, so that subsequent processing fails. Anyway, the function of the smaxt core system is not affected due to this problem. However, you should import the smaxt's internal reports and sample-projects manually through Management Studio \(see 5.3.2 Importieren\). You´ll find these SEP-files in the directories_ /smaxt/reports _and /smaxt\_test/reports of the extracted archive.
+> Occasionally we have noticed problems during upload and processing of smaxt-internal reports and demo-projects \(SEP-files\). You can recognize those problems by the messages "ERROR: wrong storage format, file can not be processed!" or "Could not add LogMsg to non-active JobId". Until now, we have not found the reason for this, but it looks like, that on some systems, processing the SEP-files with SQLLDR leads to an illegal modification of the files, so that subsequent processing fails. Anyway, the function of the smaxt core system is not affected due to this problem. However, you should import the smaxt's internal reports and sample-projects manually through Management Studio \(see 5.3.2 Importieren\). You´ll find these SEP-files in the directories\_ /smaxt/reports \_and /smaxt\_test/reports of the extracted archive.
 
 
+
+[^1]: At some steps of the installation, warnings can be issued, wich can be irgnored. They can easily be identified as they start with "! Warning is ok here, because we try to xxx from xxx that are defined later...".
+
+[^2]: Please keep in mind, that during the installation, it may sometimes look like it is freezed, because nothing happens for a while \(for example during processing of TSX\_OOXML\_WORKBOOK\_type\_bdy.sql\). But this is not the case, as for larger and more complex elements, it can possibly take a while until they are installed correctly.
 
