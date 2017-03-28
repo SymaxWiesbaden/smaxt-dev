@@ -14,8 +14,7 @@ Minimum 20 MB of free space is required for the application files.
 
 #### 1. Download
 
-Download the setup program from www.smaxt.com  
- `Setup_smaxt_Excel_Add-In_V3.0_en.zip` or append this installer to the e-mail you received together with the license information and copy the file to a directory on the target machine.
+Download the setup program from www.smaxt.com `Setup_smaxt_Excel_Add-In_V3.0_en.zip` or detach the installer from the e-mail you received together with the license information. Copy the file to a directory on the target machine.
 
 #### 2. Unzip the archive
 
@@ -37,11 +36,7 @@ First quit all currently running instances of Excel. Then run the setup-routine 
 >   
 > It has been observed that the detection of the required VSTO packet is not always reliable. In such cases, the smaxt add-in will show the following error message "... the manifest may not be valid or the file could not be downloaded ..." In this case, you have to manually download and install the VSTO-package.
 
-
-
 After successful installation Excel starts with an additional ribbon entry labeled "smaxt". The smaxt-specific operations can now be carried out within Excel. For a first introduction to this add-in, see chapter "Getting Started".
-
-
 
 [^1]: Download VSTO for Office 2010 at [http://www.microsoft.com/de-DE/download/details.aspx?id=48217](/Download der VSTO für Office 2010: http://www.microsoft.com/de-DE/download/details.aspx?id=48217)
 
