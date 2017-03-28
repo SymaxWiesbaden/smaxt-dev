@@ -156,9 +156,7 @@ After the installation please open the **\_\_make\_db.log **file and check it fo
 
 > Occasionally we have noticed problems during upload and processing of smaxt-internal reports and demo-projects \(SEP-files\). You can recognize those problems by the messages "ERROR: wrong storage format, file can not be processed!" or "Could not add LogMsg to non-active JobId". Until now, we have not found the reason for this, but it looks like, that on some systems, processing the SEP-files with SQLLDR leads to an illegal modification of the files, so that subsequent processing fails. Anyway, the function of the smaxt core system is not affected due to this problem. However, you should import the smaxt's internal reports and sample-projects manually through Management Studio \(see 5.3.2 Importieren\). You´ll find these SEP-files in the directories\_ /smaxt/reports \_and /smaxt\_test/reports of the extracted archive.
 
-
-
-# Activating the license
+### Activating the license
 
 After the installation of the smaxt core is done, the license information must be installed. You have received this along with the download instructions and it looks somewhat like this:
 
@@ -193,8 +191,6 @@ Oracle Database 11g Release 11.2.0.1.0 - Production
 • commit;
 Transaktion mit COMMIT abgeschlossen.
 ```
-
-
 
 [^1]: In theory, an installation on a ORACLE 10 database is possible, although this option is not fully tested and approved. If you need to make a such installation, you should get in contact with SYMAX support prior of your installation trials.
 
