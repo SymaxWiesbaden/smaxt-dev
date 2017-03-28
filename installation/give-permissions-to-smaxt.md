@@ -25,10 +25,6 @@ Use the following statement to create a script that creates the necessary GRANT 
 
 `ORDER BY o.OBJECT_NAME;`
 
-`Beenden Sie die Ausgabe schließlich noch mit dem Befehl:`
-
-`spool OFF`
-
 Finally, exit the output with the command:
 
 `spool OFF`
