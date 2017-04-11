@@ -14,7 +14,7 @@
 * [Getting started](getstarted/getstarted.md)
   * [Run Excel](getstarted/run-excel.md)
   * [Create A new smaxt Document](getstarted/new-smaxt-doc.md)
-  * [First Impression of smaxt Management Studio](1-imp-studio.md)
+* [First Impression of smaxt Management Studio](1-imp-studio.md)
 * [Understanding smaxt ](understanding/understanding.md)
 * [Additional Functions](additonal/add-funcs.md)
 * [smaxt MS Office Add Ins](/officeaddins/officeaddins.md)

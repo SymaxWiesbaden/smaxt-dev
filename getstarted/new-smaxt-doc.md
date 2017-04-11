@@ -37,5 +37,27 @@ Note:
 >
 > The section "7.5.2 Configuring / distributing configured database connections" provides information on how to save this file or to maintain it centrally and distribute it to several computers.
 
+
+
+### Selecting the object to be reported$$$$
+
+After you have logged in, all database schemas, in which objects have been shared to smaxt, are offered to you[^2]. Below the schema nodes, the respective shared objects are listed \(1\).
+
+As soon as the object to be reported has been selected in the upper part, a list of possible columns is offered in the middle \(2\), which are all selected by default.
+
+An optional sort can also be set under "order by" \(3\), in which the column to be sorted and the mode, ascending or descending, are defined.
+
+Finally, you must specify a category \(4\) and a name \(5\) for the evaluation before you can click "Ok".
+
+![](/assets/smaxt-choose-table-or-view.png)
+
+
+
+
+
+
+
 [^1]: Data templates are described later. In short, this is a collection of 1 to n data modules, which are specific database queries. So data templates are a kind of pattern for data collections.
+
+[^2]: Depending on the size of the database and the number of objects to be examined, it may take a few seconds until the dialog appears and you can select objects.
 
