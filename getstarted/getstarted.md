@@ -15,13 +15,23 @@ Although the following steps produce only a simple Excel report, the procedure i
 
 ## Run Excel
 
-After installing the smaxt Excel add-in, it is loaded automatically every time you Excel. Therefore you will find the additional entry "smaxt" in the menu ribbon:
+After installing the smaxt Excel add-in, it is loaded automatically every time you start Excel. Therefore you will find the additional entry "smaxt" in the menu ribbon:
 
 ![](/assets/smaxt-ribbon.png)
 
 ## Create a new smaxt document
 
-## 
+There are two ways to create a new smaxt document:
+
+* Based on an existing data template[^1]
+* From scratch", i.e. by selecting objects granted to smaxt
+  \(see chapter [Give permissions to smaxt](/installation/give-permissions-to-smaxt.md)\)
+
+In the present case, a document "from scratch" is to be created, by selecting a table or view shared with smaxt. Therefore, click the _"Create from scratch"_ option in the smaxt ribbon:
+
+![](/assets/create-from-scratch.png)
 
 
+
+[^1]: Data templates are described later. In short, this is a collection of 1 to n data modules, which are specific database queries. So data templates are a kind of pattern for data collections.
 
