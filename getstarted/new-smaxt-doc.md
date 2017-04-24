@@ -61,6 +61,14 @@ In the previous step, you selected a table or view and the columns and then clic
 
 All three object types were stored in the category, defined in step "Selecting the object to be reported". The category was named, as defined in this step \(`/GettingStarted`\).
 
+In order to avoid collisions with evaluations of the same name, which are recorded by persons working in parallel, a unique number has been attached to the names so that the name `PRODUCTLIST` is ultimately replaced by e.g. `Productlist_10001`.
+
+In the smaxt taskpane at the right screen side in Excel, you can now see that Datamodule object . It has the aliasname  `PRODUCTLIST` and returns a table.
+
+This shall be placed now into the Excel sheet at cell B2.  This works by drag and drop. Therefore select the object, keep the left mouse button pressed, draw it to the cell B2 and release the mouse button. This is shown in the following image:
+
+![](/assets/drag-object-to-excel.png)
+
 [^1]: Data templates are described later. In short, this is a collection of 1 to n data modules, which are specific database queries. So data templates are a kind of pattern for data collections.
 
 [^2]: Depending on the size of the database and the number of objects to be examined, it may take a few seconds until the dialog appears and you can select objects.
