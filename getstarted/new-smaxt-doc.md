@@ -56,10 +56,10 @@ Optionally, you can set the "preview SQL" checkbox to check the automatically ge
 In the previous step, you selected a table or view and the columns and then clicked "ok".  In this way, some smaxt objects have been created in the background:
 
 * First, a data module, based on the generated SQL query, was created
-* Second, a data template named with the alias "PRODUCTLIST" was created and the previously generated data module has been added to it.
+* Second, a data template named with the alias `"PRODUCTLIST"` was created and the previously generated data module has been added to it.
 * Third, a data configuration has been created. Usually, this would not be necessary for such simple and unparameterized applications. However, the data has to be available for the production of an Excel document - anyhow.\(Data Configurations will be described later in this document\).
 
-All three object types were stored in the category, defined in step "Selecting the object to be reported". The category was named, as defined in this step \(/GettingStarted\).
+All three object types were stored in the category, defined in step "Selecting the object to be reported". The category was named, as defined in this step \(`/GettingStarted`\).
 
 [^1]: Data templates are described later. In short, this is a collection of 1 to n data modules, which are specific database queries. So data templates are a kind of pattern for data collections.
 
